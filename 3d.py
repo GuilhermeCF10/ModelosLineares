@@ -9,8 +9,8 @@ betas = [381688.0823883057, 0.005685266373947227, -34.18806501727921]
 plothiper = plt.figure()
 grafico = plothiper.gca(projection='3d')
 
-x1g = np.linspace(-100,100,20)
-x2g = np.linspace(-100,100,20)
+x1g = np.linspace(-10000,10000,20)
+x2g = np.linspace(-10000,10000,20)
 
 XG, YG = np.meshgrid(x1g, x2g)
 Z = betas[0] + XG*betas[1] + YG*betas[2]
